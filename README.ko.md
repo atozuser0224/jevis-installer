@@ -1,30 +1,30 @@
 <div align="center">
 
-<img src="assets/logo.svg" alt="Lambda Bot" width="168" height="168">
+<img src="assets/logo.svg" alt="Lambda" width="168" height="168">
 
-# Lambda Bot
+# Lambda
 
 ### Windows용 백그라운드 어시스턴트
 
 **조용히 뒤에서 일하고, 도움이 필요해 보이면 알아채고, 언제나 먼저 물어봅니다.**
 
-<a href="https://github.com/atozuser0224/jevis-installer/releases/latest"><img src="https://img.shields.io/github/v/release/atozuser0224/jevis-installer?style=for-the-badge&label=DOWNLOAD&color=2f86e0" alt="최신 릴리스 다운로드"></a>
+<a href="https://github.com/atozuser0224/lambda-installer/releases/latest"><img src="https://img.shields.io/github/v/release/atozuser0224/lambda-installer?style=for-the-badge&label=DOWNLOAD&color=2f86e0" alt="최신 릴리스 다운로드"></a>
 <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0d5fc8?style=for-the-badge&logo=windows11&logoColor=white" alt="Windows 10, 11">
-<img src="https://img.shields.io/github/downloads/atozuser0224/jevis-installer/total?style=for-the-badge&color=6b5cf0" alt="다운로드 수">
+<img src="https://img.shields.io/github/downloads/atozuser0224/lambda-installer/total?style=for-the-badge&color=6b5cf0" alt="다운로드 수">
 
 [English](README.md) · **한국어**
 
 <br>
 
-<img src="assets/main.png" alt="대화창과 음성 오브가 있는 Lambda Bot 메인 화면" width="920">
+<img src="assets/main.png" alt="대화창과 음성 오브가 있는 Lambda 메인 화면" width="920">
 
 </div>
 
 <br>
 
-## Lambda Bot이 뭔가요?
+## Lambda가 뭔가요?
 
-Lambda Bot은 브라우저 탭이 아니라 내 PC 안에 사는 어시스턴트입니다. 작업표시줄에 작은 **오브**가 떠 있고, 말이나 글로 부탁하면 내가 고른 모델과 도구로 일을 처리합니다. 일은 뒤에서 돌아가므로 지금 하던 작업은 끊기지 않습니다.
+Lambda는 브라우저 탭이 아니라 내 PC 안에 사는 어시스턴트입니다. 작업표시줄에 작은 **오브**가 떠 있고, 말이나 글로 부탁하면 내가 고른 모델과 도구로 일을 처리합니다. 일은 뒤에서 돌아가므로 지금 하던 작업은 끊기지 않습니다.
 
 허락하면 지켜보기도 합니다. 방금 오류 창이 떴다거나 막힌 것처럼 보이면 오브가 빼꼼 나와서 **도와드릴까요?** 하고 먼저 묻습니다. 한 번 클릭으로 답하면 되고, 몰래 하는 일은 없습니다.
 
@@ -60,36 +60,36 @@ Lambda Bot은 브라우저 탭이 아니라 내 PC 안에 사는 어시스턴트
 
 - **직접 켤 때만.** 설정에서 동의하기 전에는 아무것도 기록하지 않고, 언제든 일시정지하거나 전부 지울 수 있습니다.
 - **앱 이름과 시간만.** 어떤 앱이 앞에 있었는지와 시간만 기록합니다. 화면, 창 내용, 키 입력, 내가 한 말은 **기록하지 않습니다**.
-- **민감한 곳은 건너뜁니다.** 메신저·메일 창의 제목은 남기지 않고, 비밀번호 관리자, 시크릿 창, Lambda Bot 자신은 제외합니다.
+- **민감한 곳은 건너뜁니다.** 메신저·메일 창의 제목은 남기지 않고, 비밀번호 관리자, 시크릿 창, Lambda 자신은 제외합니다.
 - **내 PC 안에만.** 기록은 Windows로 암호화해 저장하고 90일 뒤 지웁니다.
 - **조용해야 할 때는 조용히.** 전체화면, 발표, 자리 비움 중에는 먼저 말을 걸지 않고, 오브의 말풍선은 화면 캡처에 보이지 않습니다.
 
 ## 설치
 
-1. [최신 릴리스](https://github.com/atozuser0224/jevis-installer/releases/latest)에서 **`JevisSetup.exe`**를 받아 실행합니다.
+1. [최신 릴리스](https://github.com/atozuser0224/lambda-installer/releases/latest)에서 **`LambdaSetup.exe`**를 받아 실행합니다.
 2. 설치할 항목을 고르면 없는 것만 받아서 설치합니다.
-   - Lambda Bot (필수)
+   - Lambda (필수)
    - .NET 8 Desktop Runtime (없을 때만)
    - Python 3.11 + 음성·AI 라이브러리 (필수, 약 3GB)
    - 바탕 화면 바로가기
-3. Lambda Bot을 실행하고 첫 실행 화면을 따라 하세요. 음성 모델은 여기서 받고, 모델 제공자나 이미 쓰는 CLI를 연결합니다.
+3. Lambda를 실행하고 첫 실행 화면을 따라 하세요. 음성 모델은 여기서 받고, 모델 제공자나 이미 쓰는 CLI를 연결합니다.
 
 **요구 사항:** Windows 10 또는 11
 
 > [!NOTE]
 > 설치 프로그램에 아직 코드 서명이 없어 Windows SmartScreen이 경고할 수 있습니다. **추가 정보**를 누른 뒤 **실행**을 선택하세요.
 
-Lambda Bot은 예전에 Jevis라는 이름이었어서, 설치 파일과 설치 폴더에는 아직 그 이름이 남아 있습니다.
-
 ## 업데이트
 
-Lambda Bot이 이 페이지의 새 릴리스를 확인해서 앱 안에서 알려 줍니다. **업데이트**를 누르면 같은 폴더에 최신 버전을 받아 설치합니다.
+0.5.19부터 설치 파일, 앱 폴더, 데이터 폴더 이름을 Lambda로 통일했습니다. 이전 이름으로 설치한 버전은 최신 릴리스의 `LambdaSetup.exe`로 새로 설치해 주세요. 기존 설정·기록·자격 증명은 원래 폴더에 보존되며 자동 이관하지 않습니다.
+
+Lambda가 이 페이지의 새 릴리스를 확인해서 앱 안에서 알려 줍니다. **업데이트**를 누르면 같은 폴더에 최신 버전을 받아 설치합니다.
 
 ## 의견 보내기
 
-버그나 아이디어가 있나요? [이슈를 남겨 주세요](https://github.com/atozuser0224/jevis-installer/issues).
+버그나 아이디어가 있나요? [이슈를 남겨 주세요](https://github.com/atozuser0224/lambda-installer/issues).
 
 <div align="center">
 <br>
-<sub>Lambda Bot · Windows용 백그라운드 어시스턴트</sub>
+<sub>Lambda · Windows용 백그라운드 어시스턴트</sub>
 </div>
