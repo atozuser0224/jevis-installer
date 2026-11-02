@@ -1,96 +1,66 @@
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="Lambda — a Windows assistant that uses your apps for you, in a desktop of its own." src="assets/banner-light.svg" width="100%">
+</picture>
 
-<img src="assets/logo.svg" alt="Lambda" width="168" height="168">
+<p align="center">
+  <a href="https://github.com/atozuser0224/lambda-installer/releases/latest"><b>Download LambdaSetup.exe</b></a>
+  &nbsp;·&nbsp; Windows 10 / 11 &nbsp;·&nbsp;
+  <a href="README.ko.md">한국어</a>
+</p>
 
-# Lambda
+Lambda is an assistant that does things on your PC, not just talks about them. Ask in plain words — "move the meeting to Thursday", "find last month's invoice and attach it", "what's this error?" — and it opens the apps, works through them and brings back the result.
 
-### A background assistant for Windows
+It does that without borrowing your mouse or keyboard. Apps Lambda opens run in a separate Windows session you never have to look at, so you can keep typing in front while it works behind. When it needs something only you can give, like a login or a yes, it asks with a small form.
 
-**It works quietly in the background, notices when you might need a hand, and always asks first.**
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/lambda-rooms-dark.png">
+    <img alt="A team room: you, Lambda and two assistant bots in one timeline" src="assets/lambda-rooms-light.png" width="49%">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/lambda-dashboard-dark.png">
+    <img alt="The dashboard: schedule, mail, tasks and phone status on one screen" src="assets/lambda-dashboard-light.png" width="49%">
+  </picture>
+</p>
 
-<a href="https://github.com/atozuser0224/lambda-installer/releases/latest"><img src="https://img.shields.io/github/v/release/atozuser0224/lambda-installer?style=for-the-badge&label=DOWNLOAD&color=2f86e0" alt="Download the latest release"></a>
-<img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0d5fc8?style=for-the-badge&logo=windows11&logoColor=white" alt="Windows 10 and 11">
-<img src="https://img.shields.io/github/downloads/atozuser0224/lambda-installer/total?style=for-the-badge&color=6b5cf0" alt="Downloads">
+## What you can do with it
 
-**English** · [한국어](README.ko.md)
+- **Hand off computer work.** Lambda drives real Windows apps and a browser in its own desktop, checks what changed, and tells you what it actually did — not what it hoped happened.
+- **Ask about your own windows.** For apps you already have open, it reads and operates them through accessibility patterns, without moving your cursor or stealing focus.
+- **Point at things.** Freeze the screen, circle what you mean, and ask about it.
+- **Talk to it.** Call mode lets you speak, hear the answer, and cut in while it's talking.
+- **Work with a team.** Add assistants with their own roles to a room. They answer when you name them and stay quiet otherwise.
+- **Keep it on a schedule.** Reminders, recurring jobs, and "when this happens, do that" watches.
+- **Use your phone.** The Android app chats with your PC, shows the dashboard, and lets you answer forms and sign approvals away from your desk.
+- **Bring your own models.** Codex, Claude Code and OpenCode CLIs, or API keys for OpenAI, Anthropic, Gemini, OpenRouter, DeepSeek and others. Keys are kept in Windows' protected storage.
 
-<br>
+<p align="center">
+  <img alt="Point and ask: the screen freezes, you circle an error, type a question and it goes to the chat with the cropped picture" src="assets/point-capture-board.png" width="88%">
+</p>
 
-<img src="assets/main.png" alt="The Lambda main window with its conversation panel and the voice orb" width="920">
+## How it stays out of your way
 
-</div>
-
-<br>
-
-## What is Lambda?
-
-Lambda is an assistant that lives on your PC instead of in a browser tab. A small glowing **orb** sits in your taskbar. Talk to it or type, and it gets things done with the models and tools you choose. Work runs in the background, so what you are doing in front is never interrupted.
-
-It also pays attention, if you let it. When something looks stuck, such as an error dialog that just popped up, the orb peeks out and **asks whether you want help**. You answer with one click. Nothing is done behind your back.
-
-<div align="center">
-<img src="assets/orb-offer.png" alt="The orb asks: shall I look into this error? Yes, later or no" width="560">
-<br><sub>The orb offers help. Yes runs it, Later asks again in half an hour, No is remembered for a day.</sub>
-</div>
-
-## Highlights
-
-|   |   |
-|---|---|
-| **A voice orb, not a chat tab** | Speak or type. The orb follows the conversation, listens, thinks and answers right where you are working. |
-| **Asks before it acts** | Help is offered as a question. Actions that change something ask for your approval first, unless you pre-authorized them, and an approval covers that one action only. |
-| **Works in the background** | Apps are driven in hidden windows, so nothing jumps to the front and your typing is never stolen. |
-| **Bring your own models** | OpenAI, Anthropic, Gemini, OpenRouter, DeepSeek, Groq, xAI, Mistral and more, or the CLIs you already use (Codex, Claude Code, OpenCode). Keys stay in Windows' protected storage. |
-| **Skills** | Built-in skills for research, writing documents, checking and fixing projects, notes and Discord drafts. Add more from the community registry. |
-| **Your phone as a remote** | Scan a QR code on the same Wi-Fi to talk to your PC's assistant from your phone. |
-| **Yours to arrange** | Drag the conversation anywhere, resize it, or shrink it away until only the orb is left. |
-
-<div align="center">
-<img src="assets/orb-holds-chat.png" alt="The orb holding the conversation panel with both hands while it is dragged" width="760">
-<br><sub>Move or resize the conversation and the orb takes hold of it.</sub>
-</div>
-
-## Private by design
-
-Lambda can learn what you are working on so its offers are timely, but only if you say yes, and only what is needed.
-
-<div align="center">
-<img src="assets/consent.png" alt="The consent screen listing what is and is not recorded" width="760">
-</div>
-
-- **Opt-in.** Nothing is recorded until you agree in Settings, and you can pause or erase everything at any time.
-- **Just app names and time.** It records which app was in front and for how long. It does **not** record your screen, window contents, keystrokes or what you say.
-- **Skips sensitive places.** Titles of messaging and mail windows are never kept, and password managers, private windows and Lambda itself are left out.
-- **Stays on your PC.** The record is encrypted with Windows and deleted after 90 days.
-- **Quiet when it should be.** No offers while you are in a full-screen app, presenting or away, and the orb's bubbles are hidden from screen capture.
+- Nothing Lambda launches appears on your desktop. If its private session isn't ready, it says so instead of falling back to your screen.
+- It never sends keystrokes or clicks to your windows. Reading and acting on them goes through Windows accessibility, which doesn't need focus.
+- Anything that sends, deletes or pays waits for your approval — on the PC, or as a signed card on your phone.
+- Windows that block screen capture stay blocked. Lambda doesn't work around them.
 
 ## Install
 
 1. Download **`LambdaSetup.exe`** from the [latest release](https://github.com/atozuser0224/lambda-installer/releases/latest) and run it.
-2. Pick what to install. The installer downloads and sets up what is missing:
-   - Lambda (required)
-   - .NET 8 Desktop Runtime (only if you do not have it)
-   - Python 3.11 with the voice and AI libraries (required, about 3 GB)
-   - A desktop shortcut
-3. Start Lambda and follow the first-run screen. Voice models are downloaded there, and you connect a model provider or a CLI you already use.
-
-**Requirements:** Windows 10 or 11.
+2. The installer adds what's missing: the .NET 8 Desktop Runtime if you don't have it, and Python 3.11 with the voice and AI libraries (about 3 GB).
+3. Open Lambda. The first screen gets you talking right away; it asks for a model or a speech model only when a feature needs one.
 
 > [!NOTE]
-> The installer is not code-signed yet, so Windows SmartScreen may warn you. Choose **More info**, then **Run anyway**.
+> Builds aren't code-signed yet, so SmartScreen may warn you. Choose **More info**, then **Run anyway**.
 
+**Phone app:** the Android APK is in the releases tagged `android-v…`. Pair it from the phone section in Lambda's settings.
 
-## Updating
+## Updates
 
-Version 0.5.19 uses the Lambda name for the installer, app folder and data folders. For versions installed under a previous name, run `LambdaSetup.exe` from the latest release. Existing settings, history and credentials are retained in their original folders but are not migrated automatically.
-
-Lambda checks this page for new releases and tells you inside the app. **Update** downloads the latest version into the same folder.
+Lambda checks this page and tells you when a new version is out; **Update** installs it in place and keeps your settings and history. Releases are frequent and small — each one lists what changed and what was tested on a real install.
 
 ## Feedback
 
-Found a bug or have an idea? [Open an issue](https://github.com/atozuser0224/lambda-installer/issues).
-
-<div align="center">
-<br>
-<sub>Lambda · a background assistant for Windows</sub>
-</div>
+Something broken or confusing? [Open an issue](https://github.com/atozuser0224/lambda-installer/issues). A screenshot and the version you're on help a lot.

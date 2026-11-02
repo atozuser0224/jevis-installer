@@ -1,95 +1,66 @@
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="Lambda — 내 앱을 대신 써 주는 Windows 비서, 자기만의 데스크톱에서 일해요." src="assets/banner-light.svg" width="100%">
+</picture>
 
-<img src="assets/logo.svg" alt="Lambda" width="168" height="168">
+<p align="center">
+  <a href="https://github.com/atozuser0224/lambda-installer/releases/latest"><b>LambdaSetup.exe 받기</b></a>
+  &nbsp;·&nbsp; Windows 10 / 11 &nbsp;·&nbsp;
+  <a href="README.md">English</a>
+</p>
 
-# Lambda
+람다는 말로만 답하지 않고 PC에서 실제로 일을 해 주는 비서예요. "회의를 목요일로 옮겨 줘", "지난달 청구서 찾아서 첨부해 줘", "이 오류 뭐야?"처럼 평소 말로 부탁하면, 앱을 열고 처리한 뒤 결과를 가져와요.
 
-### Windows용 백그라운드 어시스턴트
+이때 마우스와 키보드를 빼앗지 않아요. 람다가 여는 앱은 보지 않아도 되는 별도 Windows 세션에서 돌아가서, 앞에서는 하던 일을 계속하면 돼요. 로그인이나 허락처럼 내가 직접 줘야 하는 것만 작은 폼으로 물어봐요.
 
-**조용히 뒤에서 일하고, 도움이 필요해 보이면 알아채고, 언제나 먼저 물어봅니다.**
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/lambda-rooms-dark.png">
+    <img alt="팀 방: 나와 람다, 비서 봇 둘이 한 흐름으로 대화" src="assets/lambda-rooms-light.png" width="49%">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/lambda-dashboard-dark.png">
+    <img alt="대시보드: 일정·메일·작업·휴대폰 상태를 한 화면에" src="assets/lambda-dashboard-light.png" width="49%">
+  </picture>
+</p>
 
-<a href="https://github.com/atozuser0224/lambda-installer/releases/latest"><img src="https://img.shields.io/github/v/release/atozuser0224/lambda-installer?style=for-the-badge&label=DOWNLOAD&color=2f86e0" alt="최신 릴리스 다운로드"></a>
-<img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0d5fc8?style=for-the-badge&logo=windows11&logoColor=white" alt="Windows 10, 11">
-<img src="https://img.shields.io/github/downloads/atozuser0224/lambda-installer/total?style=for-the-badge&color=6b5cf0" alt="다운로드 수">
+## 할 수 있는 일
 
-[English](README.md) · **한국어**
+- **컴퓨터 일 맡기기.** 람다는 자기 데스크톱에서 실제 Windows 앱과 브라우저를 다루고, 무엇이 바뀌었는지 확인한 뒤 실제로 한 일을 알려 줘요.
+- **내 창에 대해 묻기.** 이미 열어 둔 앱은 접근성 기능으로 읽고 조작해요. 커서를 움직이거나 포커스를 가져가지 않아요.
+- **화면 가리키기.** 화면을 멈추고 궁금한 곳에 동그라미를 그려서 물어봐요.
+- **전화하듯 대화.** 전화 모드에서는 말하고, 소리로 답을 듣고, 중간에 끼어들 수 있어요.
+- **팀으로 일하기.** 역할이 다른 비서를 방에 넣을 수 있어요. 이름을 부르면 답하고, 아니면 조용히 있어요.
+- **예약하기.** 알림, 반복 작업, "이런 일이 생기면 이걸 해 줘" 감시.
+- **휴대폰으로.** Android 앱으로 PC와 대화하고, 대시보드를 보고, 폼에 답하고 승인에 서명할 수 있어요.
+- **원하는 모델로.** Codex, Claude Code, OpenCode CLI나 OpenAI·Anthropic·Gemini·OpenRouter·DeepSeek 등의 API 키. 키는 Windows 보호 저장소에 보관해요.
 
-<br>
+<p align="center">
+  <img alt="화면 가리키기: 화면이 멈추고, 오류에 동그라미를 그리고, 질문하면 잘라낸 그림과 함께 대화로 가요" src="assets/point-capture-board.png" width="88%">
+</p>
 
-<img src="assets/main.png" alt="대화창과 음성 오브가 있는 Lambda 메인 화면" width="920">
+## 방해하지 않는 방식
 
-</div>
-
-<br>
-
-## Lambda가 뭔가요?
-
-Lambda는 브라우저 탭이 아니라 내 PC 안에 사는 어시스턴트입니다. 작업표시줄에 작은 **오브**가 떠 있고, 말이나 글로 부탁하면 내가 고른 모델과 도구로 일을 처리합니다. 일은 뒤에서 돌아가므로 지금 하던 작업은 끊기지 않습니다.
-
-허락하면 지켜보기도 합니다. 방금 오류 창이 떴다거나 막힌 것처럼 보이면 오브가 빼꼼 나와서 **도와드릴까요?** 하고 먼저 묻습니다. 한 번 클릭으로 답하면 되고, 몰래 하는 일은 없습니다.
-
-<div align="center">
-<img src="assets/orb-offer.png" alt="오브가 오류 창을 찾아볼까요? 라고 묻는 말풍선: 해줘, 나중에, 아니요" width="560">
-<br><sub>오브의 제안. 해줘는 실행, 나중에는 30분 뒤에 다시 묻고, 아니요는 하루 동안 기억합니다.</sub>
-</div>
-
-## 주요 기능
-
-|   |   |
-|---|---|
-| **채팅 탭이 아니라 음성 오브** | 말하거나 입력하세요. 오브가 대화를 따라다니며 듣고, 생각하고, 작업하던 그 자리에서 답합니다. |
-| **행동하기 전에 먼저 묻기** | 도움은 질문으로 나옵니다. 무언가를 바꾸는 작업은 미리 허용해 두지 않았다면 먼저 승인을 받고, 승인은 그 작업 한 번에만 유효합니다. |
-| **백그라운드에서 작업** | 앱은 숨겨진 창에서 조작해서, 화면 앞으로 튀어나오거나 타이핑을 가로채지 않습니다. |
-| **원하는 모델 그대로** | OpenAI, Anthropic, Gemini, OpenRouter, DeepSeek, Groq, xAI, Mistral 등과 이미 쓰는 CLI(Codex, Claude Code, OpenCode)를 연결합니다. 키는 Windows 보호 저장소에만 보관합니다. |
-| **스킬** | 자료 조사, 문서 작성, 프로젝트 점검·수정, 메모, Discord 초안용 기본 스킬이 들어 있고 커뮤니티 저장소에서 더 추가할 수 있습니다. |
-| **휴대폰이 리모컨** | 같은 Wi-Fi에서 QR 코드를 찍으면 휴대폰으로 PC의 어시스턴트와 대화합니다. |
-| **내 마음대로 배치** | 대화창을 아무 데나 끌어 놓고, 크기를 바꾸고, 아주 작게 줄이면 오브만 남습니다. |
-
-<div align="center">
-<img src="assets/orb-holds-chat.png" alt="대화창을 끄는 동안 오브가 두 손으로 붙잡고 있는 모습" width="760">
-<br><sub>대화창을 옮기거나 키우면 오브가 붙잡아 줍니다.</sub>
-</div>
-
-## 개인정보는 기본부터 지킵니다
-
-제안이 때에 맞도록 지금 하는 일을 알 수 있지만, 내가 허락했을 때만, 필요한 만큼만 합니다.
-
-<div align="center">
-<img src="assets/consent.png" alt="기록하는 것과 기록하지 않는 것을 보여 주는 동의 화면" width="760">
-</div>
-
-- **직접 켤 때만.** 설정에서 동의하기 전에는 아무것도 기록하지 않고, 언제든 일시정지하거나 전부 지울 수 있습니다.
-- **앱 이름과 시간만.** 어떤 앱이 앞에 있었는지와 시간만 기록합니다. 화면, 창 내용, 키 입력, 내가 한 말은 **기록하지 않습니다**.
-- **민감한 곳은 건너뜁니다.** 메신저·메일 창의 제목은 남기지 않고, 비밀번호 관리자, 시크릿 창, Lambda 자신은 제외합니다.
-- **내 PC 안에만.** 기록은 Windows로 암호화해 저장하고 90일 뒤 지웁니다.
-- **조용해야 할 때는 조용히.** 전체화면, 발표, 자리 비움 중에는 먼저 말을 걸지 않고, 오브의 말풍선은 화면 캡처에 보이지 않습니다.
+- 람다가 여는 앱은 내 데스크톱에 나타나지 않아요. 전용 세션이 준비되지 않았으면 내 화면에서 대신 하지 않고 그렇다고 알려 줘요.
+- 내 창에 키 입력이나 클릭을 보내지 않아요. 읽기와 조작은 포커스가 필요 없는 Windows 접근성 기능으로만 해요.
+- 보내기·삭제·결제는 PC에서, 또는 휴대폰의 서명된 승인 카드로 내가 허락해야 진행돼요.
+- 화면 캡처를 막아 둔 창은 그대로 막혀 있어요. 람다는 이걸 우회하지 않아요.
 
 ## 설치
 
-1. [최신 릴리스](https://github.com/atozuser0224/lambda-installer/releases/latest)에서 **`LambdaSetup.exe`**를 받아 실행합니다.
-2. 설치할 항목을 고르면 없는 것만 받아서 설치합니다.
-   - Lambda (필수)
-   - .NET 8 Desktop Runtime (없을 때만)
-   - Python 3.11 + 음성·AI 라이브러리 (필수, 약 3GB)
-   - 바탕 화면 바로가기
-3. Lambda를 실행하고 첫 실행 화면을 따라 하세요. 음성 모델은 여기서 받고, 모델 제공자나 이미 쓰는 CLI를 연결합니다.
-
-**요구 사항:** Windows 10 또는 11
+1. [최신 릴리스](https://github.com/atozuser0224/lambda-installer/releases/latest)에서 **`LambdaSetup.exe`**를 받아 실행해요.
+2. 없는 것만 설치해요: .NET 8 Desktop Runtime(없을 때만), Python 3.11과 음성·AI 라이브러리(약 3GB).
+3. 람다를 열면 바로 대화할 수 있어요. 모델이나 음성 모델은 그 기능이 필요할 때 하나씩 물어봐요.
 
 > [!NOTE]
-> 설치 프로그램에 아직 코드 서명이 없어 Windows SmartScreen이 경고할 수 있습니다. **추가 정보**를 누른 뒤 **실행**을 선택하세요.
+> 아직 코드 서명이 없어서 SmartScreen 경고가 뜰 수 있어요. **추가 정보** → **실행**을 눌러요.
+
+**휴대폰 앱:** Android APK는 `android-v…` 릴리스에 있어요. 람다 설정의 휴대폰 항목에서 짝지어요.
 
 ## 업데이트
 
-0.5.19부터 설치 파일, 앱 폴더, 데이터 폴더 이름을 Lambda로 통일했습니다. 이전 이름으로 설치한 버전은 최신 릴리스의 `LambdaSetup.exe`로 새로 설치해 주세요. 기존 설정·기록·자격 증명은 원래 폴더에 보존되며 자동 이관하지 않습니다.
+새 버전이 나오면 람다가 알려 주고, **업데이트**를 누르면 설정과 기록을 그대로 둔 채 설치돼요. 작은 업데이트가 자주 나와요. 릴리스마다 바뀐 점과 실제 설치본에서 시험한 범위를 적어 둬요.
 
-Lambda가 이 페이지의 새 릴리스를 확인해서 앱 안에서 알려 줍니다. **업데이트**를 누르면 같은 폴더에 최신 버전을 받아 설치합니다.
+## 의견
 
-## 의견 보내기
-
-버그나 아이디어가 있나요? [이슈를 남겨 주세요](https://github.com/atozuser0224/lambda-installer/issues).
-
-<div align="center">
-<br>
-<sub>Lambda · Windows용 백그라운드 어시스턴트</sub>
-</div>
+고장 났거나 헷갈리는 게 있으면 [이슈를 남겨 주세요](https://github.com/atozuser0224/lambda-installer/issues). 화면 캡처와 쓰는 버전을 함께 적어 주시면 큰 도움이 돼요.
